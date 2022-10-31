@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 0;
+  margin: 0 2rem;
+}
+
+.header img {
+  width: 190px;
+  padding-bottom: 20px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-text a {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  padding: 13px 50px;
+  border-radius: 25px;
+  box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease;
+}
+
+.hero-text a:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.social {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.social a {
+}
+
+.social a i {
+  font-size: 18px;
+  color: #fff;
+
+  height: 40px;
+  width: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a i:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+  transition: all 0.3s ease;
+}
+
+/* .social a i::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  left: 0px;
+  bottom: 0px;
+} */
+
+@media only screen and (max-width: 1440px) {
+  .hero-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .social {
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .hero-text a {
+    padding: 10px 70px;
+  }
+}
